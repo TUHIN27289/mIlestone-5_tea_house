@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <!-- css file -->
-     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" />
     <!-- tailwind css -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- font awesome -->
@@ -18,15 +18,86 @@
     />
   </head>
   <body class="max-w-6xl mx-auto">
-    <!-- header -->
-    <section class="flex mt-16">
+    <!-- header banner section -->
+    <section class="flex mt-16 manrope_font gap-x-1">
       <div class="banner-container">
-        <h1 class="text-7xl"><span>It's good </span> <span> tea time at The</span> Tea House</h1>
-        <p>Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
-        <button class="btn">Explore More</button>
+        <h1 class="manrope_font font-normal text-neutral-800 text-7xl">
+          <span class="block">It's good </span>
+          <span class="block"> tea time at The</span> Tea House
+        </h1>
+        <p class="manrope_font font-medium text-gray-500 text-lg mt-7">
+          Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
+          Taste Buds.
+        </p>
+        <div class="flex items-center">
+          <!-- <button
+            class="btn mt-5 p-4 bg-gradient-to-r from-[#FF8938 ] to-[#ff0000] rounded-lg manrope_font font-semibold text-lg text-white"
+          >
+            Explore More
+          </button> -->
+          <button
+            class="btn w-50 h-14 mt-5 p-4 bg-gradient-to-r from-orange-400 to-red-600 rounded-lg manrope_font font-semibold text-lg text-white"
+          >
+            Explore More
+          </button>
+        </div>
       </div>
-      <div class="banner-container">
-        <img src="images/banner.png">
+      <div class="banner-container bg-white relative">
+        <img class="relative top-8" src="images/banner.png" />
+        <div
+          class="rating flex items-center justify-center gap-x-2 shadow-md w-56 h-20 rounded-lg bg-white absolute top-92 right-64"
+        >
+          <div class="rating-item">
+            <i class="fa fa-star text-yellow-400 text-2xl"></i>
+          </div>
+          <div class="rating-item">
+            <h1 class="manrope_font text-xl font-extrabold">5.00</h1>
+            <p>Trust pilot ratings</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of header banner section -->
+    <section class="mt-40">
+      <h1 class="manrope_font text-5xl font-normal text-black text-center">
+        Our Featured Products
+      </h1>
+      <p
+        class="manrope_font text-center text-base font-medium text-gray-500 mt-4"
+      >
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words which don't look even slightly believable.
+      </p>
+
+      <div class="features-container grid grid-cols-4">
+        <div
+          class="features-item border border-amber-800 grid place-items-center"
+        >
+          <img
+            class="text-center items-center justify-center"
+            src="images/tea-1.png"
+            alt=""
+          />
+          <h1 class="text-center items-center">Milk Tea</h1>
+          <p class="text-center">Creamer could be replaced by fresh milk</p>
+        </div>
+
+        <div class="features-item border border-amber-800">
+          <img src="images/tea-2.png" alt="" />
+          <h1>Black Tea</h1>
+          <p>Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="features-item">
+          <img src="images/tea-3.png" alt="" />
+          <h1>Lemon Tea</h1>
+          <p>Creamer could be replaced by fresh milk</p>
+        </div>
+        <div class="features-item">
+          <img src="images/tea-4.png" alt="" />
+          <h1>Green Tea</h1>
+          <p>Creamer could be replaced by fresh milk</p>
+        </div>
       </div>
     </section>
   </body>
