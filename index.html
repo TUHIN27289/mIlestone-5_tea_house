@@ -19,9 +19,9 @@
   </head>
   <body class="max-w-6xl mx-auto">
     <!-- header banner section -->
-    <section class="flex mt-16 manrope_font gap-x-1">
+    <section class="grid grid-cols-1 md:grid-cols-2 mt-16 manrope_font gap-x-1 ">
       <div class="banner-container">
-        <h1 class="manrope_font font-normal text-neutral-800 text-7xl">
+        <h1 class="manrope_font font-bold text-neutral-800 text-7xl">
           <span class="block">It's good </span>
           <span class="block"> tea time at The</span> Tea House
         </h1>
@@ -42,12 +42,12 @@
           </button>
         </div>
       </div>
-      <div class="banner-container bg-white relative">
-        <img class="relative top-8" src="images/banner.png" />
+      <div class="banner-container bg-white  md:relative">
+        <img class="md:relative top-8" src="images/banner.png" />
         <div
-          class="rating flex items-center justify-center gap-x-2 shadow-md w-56 h-20 rounded-lg bg-white absolute top-92 right-64"
+          class="rating flex items-center justify-center gap-x-2 shadow-md w-56 h-20 rounded-lg bg-white md:absolute md:top-92 md:right-64"
         >
-          <div class="rating-item">
+          <div class="rating-item ">
             <i class="fa fa-star text-yellow-400 text-2xl"></i>
           </div>
           <div class="rating-item">
@@ -58,7 +58,7 @@
       </div>
     </section>
     <!-- end of header banner section -->
-    <section class="mt-36 bg-white ">
+    <section class="mt-36 bg-white max-w-6xl mx-auto">
       <h1 class="manrope_font text-5xl font-normal text-black text-center">
         Our Featured Products
       </h1>
@@ -68,7 +68,7 @@
         randomised words which don't look even slightly believable.
       </p>
 
-      <div class="features-container grid grid-cols-4 mt-8">
+      <div class="features-container grid grid-cols-1 mt-16 gap-y-4 ml-18   md:grid-cols-4 md:mt-8">
         <div
           class="features-item grid place-items-center text-center w-64 h-96 rounded-lg bg-gradient-to-b from-gray-200 to-white">
           <img
@@ -103,8 +103,17 @@
         </div>
       </div>
     </section>
-    <section class="mt-10">
+    <section class="great-tea mt-10 max-w-6xl mx-auto">
+        <div class="tea-container grid md:grid-cols-2">
+            <div class="tea-item">
 
+            </div>
+            <div class="tea-item">
+                <h1 class="manrope_font font-medium text-5xl text-left">Great Tea, Freshly <br> Presented</h1>
+                <p class="manrope_font font-normal text-base text-left text-gray-500 ">The meaning of gong cha is chanese is to provide the best tea to emperor from all possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been deeply appreciated by its custoers  because of good words of mouth and unique customized service orginated from Taiwan.</p>
+                <h1 class="manrope_font font-medium  text-xl">Unique Taste</h1>
+            </div>
+        </div>
     </section>
   </body>
 </html>
