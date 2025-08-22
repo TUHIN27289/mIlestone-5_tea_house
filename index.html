@@ -228,14 +228,14 @@
           </div>
         </div>
         <div
-          class="super-item relative flex flex-col items-center md:items-start w-full md:w-1/2 mt-10 md:mt-0"
+          class="super-item md:relative flex flex-col items-center md:items-start w-full md:w-1/2 mt-10 md:mt-0"
         >
           <!-- up side -->
           <div
-            class="bg-white p-6 md:p-11 absolute top-20 left-12 md:top-20 md:left-32 rounded-lg opacity-20 mb-6 w-full max-w-sm"
+            class="bg-white p-6 md:p-11 md:absolute top-20 left-12 md:top-20 md:left-32 rounded-lg md:opacity-20 mb-6 w-full max-w-sm"
           >
             <img
-              class="absolute -top-7 -left-6 rounded-full p-1 bg-white"
+              class="md:absolute -top-7 -left-6 rounded-full p-1 bg-white"
               src="images/client.png"
             />
             <p
@@ -257,10 +257,10 @@
           </div>
           <!-- middle -->
           <div
-            class="bg-white p-6 md:p-11 absolute top-72 left-12 md:top-56 md:left-10 rounded-lg z-10 mb-6 w-full max-w-sm"
+            class="bg-white p-6 md:p-11 md:absolute top-72 left-12 md:top-56 md:left-10 rounded-lg z-10 mb-6 w-full max-w-sm"
           >
             <img
-              class="absolute -top-7 -left-6 rounded-full p-1 bg-white"
+              class="md:absolute -top-7 -left-6 rounded-full p-1 bg-white"
               src="images/client.png"
             />
             <p
@@ -279,15 +279,15 @@
             >
               Businessman
             </p>
-            <img class="absolute right-6" src="images/circles.png" />
+            <img class="md:absolute right-6" src="images/circles.png" />
           </div>
 
           <!-- down side -->
           <div
-            class="bg-white p-6 md:p-11 absolute top-130 left-10 md:top-90 md:left-32 rounded-lg md:opacity-20 mb-6 w-full max-w-sm"
+            class="bg-white p-6 md:p-11 md:absolute top-130 left-10 md:top-90 md:left-32 rounded-lg md:opacity-20 mb-6 w-full max-w-sm"
           >
             <img
-              class="absolute -top-7 -left-6 rounded-full p-1 bg-white"
+              class="md:absolute -top-7 -left-6 rounded-full p-1 bg-white"
               src="images/client.png"
             />
             <p
@@ -308,9 +308,43 @@
 
       <!-- footer section -->
     </section>
-    <section class="bg-orange-100">
-      <div class="mt-12 md:mt-28 md:max-w-6xl mx-auto ">
-        <div class="footer_c1 flex justify-between pt-28 ">
+    <!-- News & Events -->
+    <section class="max-w-6xl mx-auto">
+      <h1 class="text-center mt-20 manrope_font font-extrabold text-3xl">
+        News & Events
+      </h1>
+      <p class="manrope_font text-center max-w-4xl mx-auto">
+        There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form, by injected humour, or
+        randomised words which don't look even slightly believable.
+      </p>
+      <div class=" grid grid-cols-3">
+        <div class="Events-items border border-red-500">
+          <img class="w-80 h-48 border-b-orange-600 " src="images/news-1.png" alt="" />
+          <p>Feb 05, 2027</p>
+          <h1>Collecting 8 points for discount</h1>
+          <p class="w-72 h-11">There are many variations of passages of Lorem Ipsum available.</p>
+          <h3>Learn More</h3>
+        </div>
+        <div class="Events-items max-w-96 max-h-[450px] border border-red-500">
+          <img class="w-80 h-48 "  src="images/news-2.png" alt="" />
+          <p>Feb 05, 2027</p>
+          <h1>Collecting 8 points for discount</h1>
+          <p>There are many variations of passages of Lorem Ipsum available.</p>
+          <h3>Learn More</h3>
+        </div>
+        <div class="Events-items">
+          <img class="w-80 h-48 "  src="images/news-3.png" alt="" />
+          <p>Feb 05, 2027</p>
+          <h1>Collecting 8 points for discount</h1>
+          <p>There are many variations of passages of Lorem Ipsum available.</p>
+          <h3>Learn More</h3>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#FEF1EA]">
+      <div class="mt-12 md:mt-28 md:max-w-6xl mx-auto">
+        <div class="footer_c1 flex justify-between pt-28">
           <div class="footer_c1">
             <img src="images/cup.png" />
           </div>
@@ -325,35 +359,50 @@
             </button>
           </div>
         </div>
-        <div class="services mt-20 grid grid-cols-4 justify-evenly">
-          <div class="service-items list-none">
-            <h1>Quick Links</h1>
+        <div
+          class="services mt-20 grid md:grid-cols-4 grid-cols-1 text-center md:text-left justify-evenly"
+        >
+          <div class="service-items list-none grid grid-flow-row gap-y-4">
+            <h1 class="">Quick Links</h1>
             <li class="text-gray-500">Home</li>
             <li class="text-gray-500">About Us</li>
             <li class="text-gray-500">Insurance</li>
             <li class="text-gray-500">Privacy Policy</li>
           </div>
-          <div class="service-items list-none">
+          <div class="service-items list-none grid grid-flow-row gap-y-4">
             <h1>Our Service</h1>
             <li class="text-gray-500">Life Insurance</li>
             <li class="text-gray-500">Car Insurance</li>
             <li class="text-gray-500">Health Insurance</li>
             <li class="text-gray-500">House Insurance</li>
           </div>
-          <div class="service-items list-none">
+          <div class="service-items list-none flex flex-col gap-y-4">
             <h1>Help</h1>
             <li class="text-gray-500">FAQs</li>
             <li class="text-gray-500">Contact Us</li>
           </div>
-          <div class="service-items list-none">
+          <div class="service-items list-none grid grid-flow-row gap-y-4">
             <h1>
               Subscribe to our <br />
               newsletter
             </h1>
-            <li class="text-gray-500">Email address</li>
-            <input type="email" name="" id="" />
-            <div class="">
-              <div class="items-pic flex gap-x-4">
+            <!-- <li class="text-gray-500"></li> -->
+            <div class="flex md:ml-0 ml-28">
+              <input
+                type="email"
+                name=""
+                id=""
+                class="border-b-1 pb-3 outline-none"
+                placeholder="Email address"
+              />
+              <button
+                class="w-8 h-8 rounded-full bg-gradient-to-r from-orange-400 to-red-600"
+              >
+                >
+              </button>
+            </div>
+            <div class=" ">
+              <div class="items-pic flex gap-x-4 md:ml-0 ml-40">
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-instagram"></i>
@@ -363,6 +412,9 @@
             </div>
           </div>
         </div>
+        <p class="flex justify-center items-center my-28 pb-24">
+          © 2027 UIDesign.to - All rights reserved.
+        </p>
       </div>
     </section>
   </body>
