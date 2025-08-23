@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> this is heading aviiiiii</h1>
+    </header>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium labore sed, harum, ratione non impedit eligendi voluptates quaerat architecto nostrum eveniet sit obcaecati! Praesentium obcaecati dolorem hic ullam dolore iusto.</p>
+    <button>explore more</button>
+    <li>user-1</li>
+    <li>user-2</li>
+    <li class="v">user-3</li>
+    <li>user-4</li>
+    <li class="v">user-5</li>
+    <section>
+        <div class="fav_food">
+            <h1 id="food-title">foddie aviiiiiiii</h1>
+            <li>rice</li>
+            <li>buger</li>
+            <li>pizza</li>
+            <li class="v">chicken</li>
+            <li>beef</li>
+            <li class="v">fish</li>
+            <li>vegatables</li>
+            <li class="v">soft-drinks</li>
+        </div>
+    </section>
+    <section>
+        <div class="">
+            <h1 class="v"> hey how are you </h1>
+            <ul>
+                <li>avi-1</li>
+                <li class="v">avi-2</li>
+                <li>avi-3</li>
+                <li class="v">avi-4</li>
+                <li>avi-5</li>
+            </ul>
+        </div>
+    </section>
+    <section id="jo">
+        <h1>hiiiii. aviiii <span>where are</span> you....... avviiiiiiiiiiiii <span>a229 do you</span> miss <menu></menu></h1>
+        <p>Lorem, ipsum dolor <span>sit amet consectetur</span> adipisicing elit. Molestiae nostrum quaerat <span>obcaecati neque,</span> delectus fuga doloremque libero quas deserunt <span>vitae nesciunt doloribus</span> repellat dolores quasi <span>ipsam accusantium</span> nisi. Doloribus, porro.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing <span> elit. Unde </span> deserunt qui vitae velit doloremque modi sapiente sed autem totam rem!</p>
+    </section>
+    <script>
+        const student={
+            name:'toukir',
+            id:2145214,
+            study: function( subject){
+                console.log('favourite subject:',subject);
+            }
+
+        }
+        const liCollection=document.getElementsByTagName('li');
+        console.log(liCollection);
+        for(const i of liCollection){
+            console.log(i);
+        }
+        console.log('toukir aviiiiiiiii');
+        console.log(liCollection);
+        for(const i of liCollection){
+            console.log(i);
+        }
+          console.log('toukir aviiiiiiiii');
+        console.log(liCollection);
+        for(const i of liCollection){
+            console.log(i.innerText);
+        }
+        const foddie_avi=document.getElementById('food-title');
+        console.log(foddie_avi.innerText);
+
+        foddie_avi.innerHTML="aviiiiiiiii lets go for date" 
+        console.log(foddie_avi.innerText)
+        
+        const classbyname=document.getElementsByClassName('v');
+        for(const o of classbyname){
+            console.log(o.innerText)
+        }
+
+        // queryselector all returns list of data
+        const querselAll=document.querySelectorAll('#jo p span');
+        for(const j of querselAll){
+            console.log(j.innerText);
+        }
+        // queryselector return only the first element
+        const querysel=document.querySelector('#jo p');
+        console.log(querysel.innerText);
+    </script>
+
+    <script src="js/avi.js"></script>
+</body>
+</html>
