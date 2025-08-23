@@ -1,3 +1,4 @@
+
 console.log('this is external jssssssssssssss');
 console.log(document);
 
@@ -62,3 +63,56 @@ newChild.innerText='new born footballer here';
 // find the parent where you will add the child
 const playerList = document.getElementById('avi_miss');
 playerList.appendChild(newChild);
+
+
+
+// 24-8 Create HTML elements using Javascript and appendChild
+
+// parent node
+const mainContainer=document.getElementById('main_con');
+
+// create section(child)
+const placesSection=document.createElement('section')
+
+// create h1
+const h1_=document.createElement('h1');
+h1_.innerText='hi this toukir....are you there ~ ~ ~';
+
+const p_=document.createElement('p');
+p_.innerText='Interactive OpenGL Graphics Project: Create immersive scenes with dynamic weather, day/night cycles, and user control. Explore the power of computer graphics through realistic simulations. This project showcases rendering, animation, and user interaction techniques.'
+
+const ull=document.createElement('ul');
+const li1=document.createElement('li');
+li1.innerText='aviiiiiii ';
+const li2=document.createElement('li');
+li2.innerText='1229'
+const li3=document.createElement('li');
+li3.innerText='~ ~ ~';
+const li4=document.createElement('li');
+li4.innerText='Toukir';
+
+
+
+// child connected to parent
+mainContainer.appendChild( placesSection);
+placesSection.appendChild(h1_)
+placesSection.appendChild(p_)
+placesSection.appendChild(ull)
+ull.appendChild(li1)
+ull.appendChild(li2)
+ull.appendChild(li3)
+ull.appendChild(li4)
+
+//  easir ways to create html
+const bookSection=document.createElement('section');
+bookSection.innerHTML=`
+<h1>this is all avi's fav book</h1>
+<ul>
+<li>c</li>
+<li>java</li>
+<li>c++</li>
+<li>.net</li>
+<li>math</li>
+</ul>
+`
+mainContainer.appendChild(bookSection)
