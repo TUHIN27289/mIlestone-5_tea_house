@@ -24,3 +24,7 @@ btnMakePurple.onclick= makeBgPurple
 function makeBgPurple(){
     document.body.style.backgroundColor='purple';
 }
+
+document.getElementById('make-bg-gray').addEventListener('click',function(){
+    document.body.style.backgroundColor='gray';
+})
