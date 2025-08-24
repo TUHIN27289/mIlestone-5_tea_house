@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <button onclick="console.log('yeah you have clicked me')">click me</button>
-    <button onclick="console.log(' Allah is always there to help you')">help me</button>
+    <button onclick="console.log(' Allah is always there to help you')">
+      help me
+    </button>
     <button onclick="console.log('1229')">fav number</button>
     <button onclick="makeAqua()">make bg aqua</button>
-    <button onclick="makeTomato()"> make bg lightgreen</button>
-    <button id="make-bg-blue"> make bg blue</button>
+    <button onclick="makeTomato()">make bg lightgreen</button>
+    <button id="make-bg-blue">make bg blue</button>
     <button id="make-bg-green">make bg green</button>
     <button id="make-bg-purple">make bg purple</button>
     <button id="make-bg-yellow">make bg yellow</button>
     <button id="make-bg-gray">make-bg-gray</button>
 
+    <h1 id="page-title">Event Handler</h1>
+    <button id="upadate-btn">update title</button>
+    <br /><br /><br /><br /><br />
+    <p id="para-Text">
+      hi aviii this is a paragrapgh.........how are you ???? ..let code
+      together.
+    </p>
+    <button id="update-para">update paragraph</button>
+    <br /><br />
+    <p id="update-name">no name</p>
+    <input id="inpu-name" type="text" placeholder="your name" />
+    <button id="upbtn">update name</button>
+
+    <br /><br /><br /><br /><br />
+    <h1>favourite person</h1>
+    <p id="naHere">name here</p>
+    <input id="favInput" type="text" placeholder="your favorite " />
+    <button id="favBtn">update fav name</button>
     <script>
-        document.getElementById('make-bg-yellow').addEventListener('click',function()
-    {
-        document.body.style.backgroundColor='yellow';
-    })
-    document.getElementById('make-bg-gray').addEventListener('mouseover',function(){
-        document.body.style.backgroundColor='red';
-    })
+        
     </script>
-    
+
     <script src="avievent.js"></script>
-</body>
+  </body>
 </html>
