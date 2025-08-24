@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+        .comment{
+            background-color: aqua;
+            border :2px solid tomato;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
   </head>
   <body>
     <button onclick="console.log('yeah you have clicked me')">click me</button>
@@ -37,7 +46,34 @@
     <p id="naHere">name here</p>
     <input id="favInput" type="text" placeholder="your favorite " />
     <button id="favBtn">update fav name</button>
+    <br><br><br><br><br><br><br><br><br><br>
+   <section >
+    <h1> Comment Box testing</h1>
+    <div id="comment-container">
+         
+    <p class="comment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, voluptate. Quibusdam amet voluptatem pariatur cupiditate unde similique repudiandae at, dolores provident, incidunt temporibus beatae asperiores nobis. Voluptates vero ad incidunt.</p>
+    <p class="comment">Consectetur voluptates nesciunt aliquid commodi. Possimus, doloremque voluptates, temporibus reprehenderit asperiores veniam perspiciatis doloribus error ut quaerat minus fugiat, debitis aut? Fugit, illo accusantium non dolorem fugiat qui cumque repudiandae!</p>
+    <p class="comment">Ab, distinctio labore, hic saepe minima impedit ipsum molestiae commodi tempora quam aliquam odio quo! Soluta repellendus explicabo praesentium nemo provident unde, impedit nostrum recusandae possimus. Enim adipisci amet voluptates.</p>
+    
+    <textarea name="" id="comText" cols="60" rows="6"></textarea>
+    <br><br>
+    <button id="post">Post</button>
+    </div>
+    
+   </section>
     <script>
+        document.getElementById('post').addEventListener('click',function(){
+            const com=document.getElementById('comText');
+            const acom=com.value;
+            const comCon=document.getElementById('comment-container')
+            const comElement=document.createElement('p');
+            
+            comElement.innerText=acom;
+            comElement.classList.add('comment')
+            comCon.appendChild(comElement)
+            comText.value=''
+
+        })
         
     </script>
 
