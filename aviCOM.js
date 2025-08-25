@@ -61,31 +61,31 @@ document.getElementById("input_name").addEventListener("keyup", function (ev) {
   }
 });
 
-
 // 25-7 (semi-advanced) Event bubble and Stop propagating
-document.getElementById('item-3').addEventListener('click',function(){
-            console.log('li -3 clicked')
-            event.stopImmediatePropagation();
-        })
+document.getElementById("item-3").addEventListener("click", function (event) {
+  console.log("li -3 clicked");
+  event.stopImmediatePropagation();
+//   event.stopPropagation();
+});
 
-        document.getElementById('item-3').addEventListener('click',function(event){
-            console.log('li -3 second clicked')
-        })
+document.getElementById("item-3").addEventListener("click", function (event) {
+  console.log("li -3 second clicked");
+});
 
-        document.getElementById('item-3').addEventListener('click',function(){
-            console.log('li -3  third clicked')
-        })
+document.getElementById("item-3").addEventListener("click", function () {
+  console.log("li -3  third clicked");
+});
 
-        document.getElementById('ol-clicked').addEventListener('click',function(){
-            console.log('ol clicked')
-        })
-        document.getElementById('div-clicked').addEventListener('click',function(){
-            console.log('div clicked')
-        })
-        document.getElementById('sec-clicked').addEventListener('click',function(){
-            console.log('section clicked')
-        })
-        document.getElementById('body-click').addEventListener('click',function(){
-            console.log('body clicked')
-        })
-        
+document.getElementById("ol-clicked").addEventListener("click", function () {
+  console.log("ol clicked");
+});
+document.getElementById("div-clicked").addEventListener("click", function () {
+  console.log("div clicked");
+});
+document.getElementById("sec-clicked").addEventListener("click", function () {
+  console.log("section clicked");
+});
+document.getElementById("body-click").addEventListener("click", function () {
+  console.log("body clicked");
+});
+
