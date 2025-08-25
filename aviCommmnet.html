@@ -30,18 +30,38 @@
             <br></br>
             <button id="post">Post</button>
         </section>
+        <br><br><br><br><br>
+        <section>
+            <button id="btn-mouse">avii button</button>
+            <br><br><br>
+            <input id="name_avi" type="text" placeholder="your name">
+            <input id="avi-mail" type="email" placeholder="your mail">
+            <br><br><br>
+            <textarea name="" id="favS" cols="60" rows="6" placeholder="your favourite place"></textarea>
+        </section>
+        <section>
+            <p id="sec-tag">type your favourite person name</p>
+            <input id="input_name" type="text" placeholder="type here">
+            <button id="dlt-btn" disabled>Delete</button>
+        </section>
     </main>
     <script>
-        document.getElementById('post').addEventListener('click',function(){
-            const comatext=document.getElementById('commentBox');
-            const newcom=comatext.value;
-            const newcHild=document.createElement('p');
-            newcHild.classList.add('comment')
-            newcHild.innerText=newcom;
-            const comcon=document.getElementById('comCantainer');
-            comcon.appendChild(newcHild)
-
+        document.getElementById('input_name').addEventListener('keyup',function(ev){
+            let text=ev.target.value;
+            console.log('typing ',text)
+             const st=document.getElementById('dlt-btn');
+             const scode=document.getElementById('sec-tag');
+            if(text==='avi'){
+                st.removeAttribute('disabled');
+                scode.style.display='none'
+            }
+            else{
+                st.setAttribute('disabled',true)
+                scode.style.display='block';
+                
+            }
         })
+       
     </script>
     <script src="aviCOM.js"></script>
 </body>
