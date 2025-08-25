@@ -46,3 +46,46 @@ document.getElementById("favS").addEventListener("keyup", function (event) {
 document.getElementById("favS").addEventListener("keydown", function (e) {
   console.log("typing", e.target.value);
 });
+
+document.getElementById("input_name").addEventListener("keyup", function (ev) {
+  let text = ev.target.value;
+  console.log("typing ", text);
+  const st = document.getElementById("dlt-btn");
+  const scode = document.getElementById("sec-tag");
+  if (text === "avi") {
+    st.removeAttribute("disabled");
+    scode.style.display = "none";
+  } else {
+    st.setAttribute("disabled", true);
+    scode.style.display = "block";
+  }
+});
+
+
+// 25-7 (semi-advanced) Event bubble and Stop propagating
+document.getElementById('item-3').addEventListener('click',function(){
+            console.log('li -3 clicked')
+            event.stopImmediatePropagation();
+        })
+
+        document.getElementById('item-3').addEventListener('click',function(event){
+            console.log('li -3 second clicked')
+        })
+
+        document.getElementById('item-3').addEventListener('click',function(){
+            console.log('li -3  third clicked')
+        })
+
+        document.getElementById('ol-clicked').addEventListener('click',function(){
+            console.log('ol clicked')
+        })
+        document.getElementById('div-clicked').addEventListener('click',function(){
+            console.log('div clicked')
+        })
+        document.getElementById('sec-clicked').addEventListener('click',function(){
+            console.log('section clicked')
+        })
+        document.getElementById('body-click').addEventListener('click',function(){
+            console.log('body clicked')
+        })
+        

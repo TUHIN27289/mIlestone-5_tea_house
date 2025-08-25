@@ -12,10 +12,35 @@
             border: 2px solid tomato;
             border-radius: 10px;
         }
+        body{
+            border: 2px solid tomato;
+            border-radius: 10px;
+            margin: 10px;
+        }
+          section{
+            border: 2px solid black;
+            border-radius: 10px;
+            margin: 10px;
+        }
+          div{
+            border: 2px solid red;
+            border-radius: 10px;
+            margin: 10px;
+        }
+          ol{
+            border: 2px solid green;
+            border-radius: 10px;
+            margin: 10px;
+        }
+          li{
+            border: 2px solid blue;
+            border-radius: 10px;
+            margin: 10px;
+        }
     </style>
 
 </head>
-<body>
+<body id="body-click">
     <main>
         <section>
             <h1>this is commment avi</h1>
@@ -44,23 +69,24 @@
             <input id="input_name" type="text" placeholder="type here">
             <button id="dlt-btn" disabled>Delete</button>
         </section>
+        <!-- 25-7 (semi-advanced) Event bubble and Stop propagating -->
+         <section id="sec-clicked">
+            <h1>25-7 (semi-advanced) Event bubble and Stop propagating</h1>
+            <div id="div-clicked">
+                <h1>hiiii aviiiiiii</h1>
+                <ol id="ol-clicked">
+                    <li id="item-1">Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
+                    <li id="item-2">Blanditiis ducimus enim cumque itaque? Temporibus, cum.</li>
+                    <li id="item-3">Cum ut impedit optio, asperiores laborum itaque?</li>
+                    <li id="item-4">Ratione recusandae deserunt voluptatum, quo harum sit?</li>
+                    <li id="item-5">Ratione beatae assumenda, quasi fuga eos hic.</li>
+                </ol>
+            </div>
+
+         </section>
     </main>
     <script>
-        document.getElementById('input_name').addEventListener('keyup',function(ev){
-            let text=ev.target.value;
-            console.log('typing ',text)
-             const st=document.getElementById('dlt-btn');
-             const scode=document.getElementById('sec-tag');
-            if(text==='avi'){
-                st.removeAttribute('disabled');
-                scode.style.display='none'
-            }
-            else{
-                st.setAttribute('disabled',true)
-                scode.style.display='block';
-                
-            }
-        })
+        
        
     </script>
     <script src="aviCOM.js"></script>
