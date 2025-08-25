@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .comment{
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid tomato;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <section>
+            <h1>this is commment avi</h1>
+            <div id="comCantainer">
+                <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos porro alias beatae. Eos architecto officia eveniet possimus molestiae. Ea facere atque neque vel magni ab porro a possimus nobis deleniti!</p>
+                <p class="comment">Corrupti id quam a, beatae eos iste, inventore sapiente at in impedit atque repellendus, consectetur vitae! Magnam, velit? Fugit ipsa ad hic sit dolores eum placeat, labore repellendus distinctio dicta.</p>
+                <p class="comment">Quaerat maiores facere fugiat eaque numquam saepe iste dicta officiis laborum aperiam ab error sint voluptatibus modi reiciendis impedit, neque natus veritatis. Quisquam, placeat veritatis. Fugit quos delectus eligendi ipsa.</p>
+                <p class="comment">Nam iusto soluta, provident enim numquam odit vel sequi magni mollitia omnis dolores quis! Soluta vero adipisci consequuntur! Obcaecati dolores inventore quas excepturi pariatur dolorum vitae ullam mollitia, officiis earum.</p>
+                <p class="comment">Corrupti natus porro amet illo debitis, suscipit reprehenderit aut minima saepe, harum dolores ex laboriosam, eligendi nemo. Repellendus itaque maiores non molestiae sit. Animi id corrupti minima unde ab beatae.</p>
+            </div>
+            <textarea name="" id="commentBox" cols="60" rows="6" placeholder="your comment"></textarea>
+            <br></br>
+            <button id="post">Post</button>
+        </section>
+    </main>
+    <script>
+        document.getElementById('post').addEventListener('click',function(){
+            const comatext=document.getElementById('commentBox');
+            const newcom=comatext.value;
+            const newcHild=document.createElement('p');
+            newcHild.classList.add('comment')
+            newcHild.innerText=newcom;
+            const comcon=document.getElementById('comCantainer');
+            comcon.appendChild(newcHild)
+
+        })
+    </script>
+    <script src="aviCOM.js"></script>
+</body>
+</html>
